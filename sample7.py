@@ -1,0 +1,21 @@
+import math
+A=B=L=R=m=k=0
+while(True):
+    a=input()
+    if(a=="STOP"):
+        break
+    else:
+       b=int(input())
+       if(a=="Up"):
+            A=A+b
+       elif(a=="Down"):
+            B=B+b
+       elif(a=="Left"):
+            L=L+b
+       elif(a=="Right"):
+            R=R+b
+k=A-B
+m=L-R
+print(A,B,L,R)
+print(k,m)
+print(round(math.sqrt(k**2+m**2)))
